@@ -1243,7 +1243,7 @@ namespace Shelley_Capstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OrderFulfilledRow AddOrderFulfilledRow(OrdersRow parentOrdersRowByFK__OrderFulf__Order__47DBAE45, System.DateTime FulfilledDateTime) {
+            public OrderFulfilledRow AddOrderFulfilledRow(OrdersRow parentOrdersRowByFK__OrderFulf__Order__47DBAE45, string FulfilledDateTime) {
                 OrderFulfilledRow rowOrderFulfilledRow = ((OrderFulfilledRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1289,7 +1289,7 @@ namespace Shelley_Capstone {
             private void InitClass() {
                 this.columnOrderId = new global::System.Data.DataColumn("OrderId", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOrderId);
-                this.columnFulfilledDateTime = new global::System.Data.DataColumn("FulfilledDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                this.columnFulfilledDateTime = new global::System.Data.DataColumn("FulfilledDateTime", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFulfilledDateTime);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnOrderId}, true));
@@ -1860,7 +1860,7 @@ namespace Shelley_Capstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OrdersRow AddOrdersRow(System.DateTime OrderDateTime, int OrderNumber, UsersRow parentUsersRowByFK__Orders__UserId__5AEE82B9, TableRow parentTableRowByFK__Orders__TableId__5BE2A6F2) {
+            public OrdersRow AddOrdersRow(string OrderDateTime, int OrderNumber, UsersRow parentUsersRowByFK__Orders__UserId__5AEE82B9, TableRow parentTableRowByFK__Orders__TableId__5BE2A6F2) {
                 OrdersRow rowOrdersRow = ((OrdersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1915,7 +1915,7 @@ namespace Shelley_Capstone {
             private void InitClass() {
                 this.columnOrderId = new global::System.Data.DataColumn("OrderId", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOrderId);
-                this.columnOrderDateTime = new global::System.Data.DataColumn("OrderDateTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                this.columnOrderDateTime = new global::System.Data.DataColumn("OrderDateTime", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOrderDateTime);
                 this.columnOrderNumber = new global::System.Data.DataColumn("OrderNumber", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOrderNumber);
@@ -2903,10 +2903,10 @@ namespace Shelley_Capstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime FulfilledDateTime {
+            public string FulfilledDateTime {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableOrderFulfilled.FulfilledDateTimeColumn]));
+                        return ((string)(this[this.tableOrderFulfilled.FulfilledDateTimeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'FulfilledDateTime\' in table \'OrderFulfilled\' is DBNull.", e);
@@ -3083,9 +3083,9 @@ namespace Shelley_Capstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime OrderDateTime {
+            public string OrderDateTime {
                 get {
-                    return ((global::System.DateTime)(this[this.tableOrders.OrderDateTimeColumn]));
+                    return ((string)(this[this.tableOrders.OrderDateTimeColumn]));
                 }
                 set {
                     this[this.tableOrders.OrderDateTimeColumn] = value;
@@ -3751,7 +3751,7 @@ SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM d" +
@@ -3760,15 +3760,27 @@ SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM 
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM d" +
-                "bo.Inventory WHERE InventoryCode LIKE \'%\' + @value + \'%\'";
+                "bo.Inventory WHERE InventoryCode > @value";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM d" +
-                "bo.Inventory WHERE InventoryQuantity LIKE @value";
+                "bo.Inventory WHERE InventoryQuantity > @value";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryQuantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM d" +
+                "bo.Inventory WHERE InventoryCode LIKE \'%\' + @value + \'%\'";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM d" +
+                "bo.Inventory WHERE InventoryQuantity LIKE @value";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryQuantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3799,7 +3811,7 @@ SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchCode(ShelleyRestaurantDataSet.InventoryDataTable dataTable, string value) {
+        public virtual int FillByCodeGreater(ShelleyRestaurantDataSet.InventoryDataTable dataTable, string value) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((value == null)) {
                 throw new global::System.ArgumentNullException("value");
@@ -3818,8 +3830,46 @@ SELECT InventoryId, InventoryCode, InventoryDescription, InventoryQuantity FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchQuantity(ShelleyRestaurantDataSet.InventoryDataTable dataTable, global::System.Nullable<int> value) {
+        public virtual int FillByQuantityGreater(ShelleyRestaurantDataSet.InventoryDataTable dataTable, global::System.Nullable<int> value) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((value.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int SearchCode(ShelleyRestaurantDataSet.InventoryDataTable dataTable, string value) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((value == null)) {
+                throw new global::System.ArgumentNullException("value");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(value));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int SearchQuantity(ShelleyRestaurantDataSet.InventoryDataTable dataTable, global::System.Nullable<int> value) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
             if ((value.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value.Value));
             }
@@ -4641,11 +4691,17 @@ SELECT OrderId, FulfilledDateTime FROM OrderFulfilled WHERE (OrderId = @OrderId)
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT OrderId, FulfilledDateTime FROM dbo.OrderFulfilled";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT OrderId, FulfilledDateTime FROM dbo.OrderFulfilled WHERE FulfilledDateTime" +
+                " > @value";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "FulfilledDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4667,6 +4723,42 @@ SELECT OrderId, FulfilledDateTime FROM OrderFulfilled WHERE (OrderId = @OrderId)
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual ShelleyRestaurantDataSet.OrderFulfilledDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            ShelleyRestaurantDataSet.OrderFulfilledDataTable dataTable = new ShelleyRestaurantDataSet.OrderFulfilledDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(ShelleyRestaurantDataSet.OrderFulfilledDataTable dataTable, string value) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((value == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(value));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ShelleyRestaurantDataSet.OrderFulfilledDataTable GetDataBy(string value) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((value == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(value));
+            }
             ShelleyRestaurantDataSet.OrderFulfilledDataTable dataTable = new ShelleyRestaurantDataSet.OrderFulfilledDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -5277,17 +5369,17 @@ SELECT OrderItemId, OrderId, MenuItemId, OrderItemRequests FROM OrderItem WHERE 
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Orders";
             tableMapping.ColumnMappings.Add("OrderId", "OrderId");
-            tableMapping.ColumnMappings.Add("OrderDateTime", "OrderDateTime");
             tableMapping.ColumnMappings.Add("OrderNumber", "OrderNumber");
             tableMapping.ColumnMappings.Add("UserId", "UserId");
             tableMapping.ColumnMappings.Add("TableId", "TableId");
+            tableMapping.ColumnMappings.Add("OrderDateTime", "OrderDateTime");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Orders] WHERE (([OrderId] = @Original_OrderId) AND ([OrderDateTime] = @Original_OrderDateTime) AND ((@IsNull_OrderNumber = 1 AND [OrderNumber] IS NULL) OR ([OrderNumber] = @Original_OrderNumber)) AND ([UserId] = @Original_UserId) AND ((@IsNull_TableId = 1 AND [TableId] IS NULL) OR ([TableId] = @Original_TableId)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Orders] WHERE (([OrderId] = @Original_OrderId) AND ([OrderDateTime] = @Original_OrderDateTime) AND ((@IsNull_OrderNumber = 1 AND [OrderNumber] IS NULL) OR ([OrderNumber] = @Original_OrderNumber)) AND ([UserId] = @Original_UserId) AND ((@IsNull_TableId = 1 AND [TableId] IS NULL) OR ([TableId] = @Original_TableId)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderDateTime", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OrderNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -5295,26 +5387,25 @@ SELECT OrderItemId, OrderId, MenuItemId, OrderItemRequests FROM OrderItem WHERE 
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TableId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TableId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Orders] ([OrderDateTime], [OrderNumber], [UserId], [TableId]) " +
-                "VALUES (@OrderDateTime, @OrderNumber, @UserId, @TableId);\r\nSELECT OrderId, Order" +
-                "DateTime, OrderNumber, UserId, TableId FROM Orders WHERE (OrderId = SCOPE_IDENTI" +
-                "TY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Orders] ([OrderDateTime], [OrderNumber], [UserId], [TableId]) VALUES" +
+                " (@OrderDateTime, @OrderNumber, @UserId, @TableId);\r\nSELECT OrderId, OrderDateTi" +
+                "me, OrderNumber, UserId, TableId FROM Orders WHERE (OrderId = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderDateTime", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TableId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TableId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Orders] SET [OrderDateTime] = @OrderDateTime, [OrderNumber] = @OrderNumber, [UserId] = @UserId, [TableId] = @TableId WHERE (([OrderId] = @Original_OrderId) AND ([OrderDateTime] = @Original_OrderDateTime) AND ((@IsNull_OrderNumber = 1 AND [OrderNumber] IS NULL) OR ([OrderNumber] = @Original_OrderNumber)) AND ([UserId] = @Original_UserId) AND ((@IsNull_TableId = 1 AND [TableId] IS NULL) OR ([TableId] = @Original_TableId)));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Orders] SET [OrderDateTime] = @OrderDateTime, [OrderNumber] = @OrderNumber, [UserId] = @UserId, [TableId] = @TableId WHERE (([OrderId] = @Original_OrderId) AND ([OrderDateTime] = @Original_OrderDateTime) AND ((@IsNull_OrderNumber = 1 AND [OrderNumber] IS NULL) OR ([OrderNumber] = @Original_OrderNumber)) AND ([UserId] = @Original_UserId) AND ((@IsNull_TableId = 1 AND [TableId] IS NULL) OR ([TableId] = @Original_TableId)));
 SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (OrderId = @OrderId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderDateTime", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TableId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TableId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderDateTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderDateTime", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OrderNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -5333,35 +5424,47 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM dbo.Orders";
+            this._commandCollection[0].CommandText = "SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM dbo.Orders WHERE" +
-                " OrderDateTime LIKE \'%\' + @value + \'%\'";
+            this._commandCollection[1].CommandText = "SELECT OrderDateTime, OrderId, OrderNumber, TableId, UserId FROM Orders WHERE (Or" +
+                "derDateTime > @value)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM dbo.Orders WHERE" +
-                " OrderNumber LIKE @value";
+            this._commandCollection[2].CommandText = "SELECT OrderDateTime, OrderId, OrderNumber, TableId, UserId FROM Orders WHERE (Or" +
+                "derDateTime < @value)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM dbo.Orders WHERE" +
-                " TableId LIKE @value";
+            this._commandCollection[3].CommandText = "SELECT OrderDateTime, OrderId, OrderNumber, TableId, UserId FROM Orders WHERE (Or" +
+                "derDateTime LIKE \'%\' + @value + \'%\')";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "TableId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "OrderDateTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM dbo.Orders WHERE" +
-                " UserId LIKE @value";
+            this._commandCollection[4].CommandText = "SELECT OrderDateTime, OrderId, OrderNumber, TableId, UserId FROM Orders WHERE (Or" +
+                "derNumber LIKE @value)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "UserId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "OrderNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = "SELECT OrderDateTime, OrderId, OrderNumber, TableId, UserId FROM Orders WHERE (Ta" +
+                "bleId LIKE @value)";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "TableId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[6].Connection = this.Connection;
+            this._commandCollection[6].CommandText = "SELECT OrderDateTime, OrderId, OrderNumber, TableId, UserId FROM Orders WHERE (Us" +
+                "erId LIKE @value)";
+            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@value", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "UserId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5392,7 +5495,7 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchDateTime(ShelleyRestaurantDataSet.OrdersDataTable dataTable, string value) {
+        public virtual int FillByDateAfter(ShelleyRestaurantDataSet.OrdersDataTable dataTable, string value) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((value == null)) {
                 throw new global::System.ArgumentNullException("value");
@@ -5411,8 +5514,46 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchNumber(ShelleyRestaurantDataSet.OrdersDataTable dataTable, global::System.Nullable<int> value) {
+        public virtual int FillByDateBefore(ShelleyRestaurantDataSet.OrdersDataTable dataTable, string value) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((value == null)) {
+                throw new global::System.ArgumentNullException("value");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(value));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int SearchDateTime(ShelleyRestaurantDataSet.OrdersDataTable dataTable, string value) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((value == null)) {
+                throw new global::System.ArgumentNullException("value");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(value));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int SearchNumber(ShelleyRestaurantDataSet.OrdersDataTable dataTable, global::System.Nullable<int> value) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
             if ((value.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value.Value));
             }
@@ -5431,7 +5572,7 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int SearchTable(ShelleyRestaurantDataSet.OrdersDataTable dataTable, global::System.Nullable<int> value) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((value.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value.Value));
             }
@@ -5450,7 +5591,7 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int SearchUser(ShelleyRestaurantDataSet.OrdersDataTable dataTable, int value) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
+            this.Adapter.SelectCommand = this.CommandCollection[6];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(value));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5492,9 +5633,14 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_OrderId, System.DateTime Original_OrderDateTime, global::System.Nullable<int> Original_OrderNumber, int Original_UserId, global::System.Nullable<int> Original_TableId) {
+        public virtual int Delete(int Original_OrderId, string Original_OrderDateTime, global::System.Nullable<int> Original_OrderNumber, int Original_UserId, global::System.Nullable<int> Original_TableId) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_OrderId));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_OrderDateTime));
+            if ((Original_OrderDateTime == null)) {
+                throw new global::System.ArgumentNullException("Original_OrderDateTime");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_OrderDateTime));
+            }
             if ((Original_OrderNumber.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_OrderNumber.Value));
@@ -5532,8 +5678,13 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime OrderDateTime, global::System.Nullable<int> OrderNumber, int UserId, global::System.Nullable<int> TableId) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(OrderDateTime));
+        public virtual int Insert(string OrderDateTime, global::System.Nullable<int> OrderNumber, int UserId, global::System.Nullable<int> TableId) {
+            if ((OrderDateTime == null)) {
+                throw new global::System.ArgumentNullException("OrderDateTime");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(OrderDateTime));
+            }
             if ((OrderNumber.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((int)(OrderNumber.Value));
             }
@@ -5567,8 +5718,13 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime OrderDateTime, global::System.Nullable<int> OrderNumber, int UserId, global::System.Nullable<int> TableId, int Original_OrderId, System.DateTime Original_OrderDateTime, global::System.Nullable<int> Original_OrderNumber, int Original_UserId, global::System.Nullable<int> Original_TableId, int OrderId) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(OrderDateTime));
+        public virtual int Update(string OrderDateTime, global::System.Nullable<int> OrderNumber, int UserId, global::System.Nullable<int> TableId, int Original_OrderId, string Original_OrderDateTime, global::System.Nullable<int> Original_OrderNumber, int Original_UserId, global::System.Nullable<int> Original_TableId, int OrderId) {
+            if ((OrderDateTime == null)) {
+                throw new global::System.ArgumentNullException("OrderDateTime");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(OrderDateTime));
+            }
             if ((OrderNumber.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(OrderNumber.Value));
             }
@@ -5583,7 +5739,12 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_OrderId));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(Original_OrderDateTime));
+            if ((Original_OrderDateTime == null)) {
+                throw new global::System.ArgumentNullException("Original_OrderDateTime");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_OrderDateTime));
+            }
             if ((Original_OrderNumber.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_OrderNumber.Value));
@@ -5622,7 +5783,7 @@ SELECT OrderId, OrderDateTime, OrderNumber, UserId, TableId FROM Orders WHERE (O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime OrderDateTime, global::System.Nullable<int> OrderNumber, int UserId, global::System.Nullable<int> TableId, int Original_OrderId, System.DateTime Original_OrderDateTime, global::System.Nullable<int> Original_OrderNumber, int Original_UserId, global::System.Nullable<int> Original_TableId) {
+        public virtual int Update(string OrderDateTime, global::System.Nullable<int> OrderNumber, int UserId, global::System.Nullable<int> TableId, int Original_OrderId, string Original_OrderDateTime, global::System.Nullable<int> Original_OrderNumber, int Original_UserId, global::System.Nullable<int> Original_TableId) {
             return this.Update(OrderDateTime, OrderNumber, UserId, TableId, Original_OrderId, Original_OrderDateTime, Original_OrderNumber, Original_UserId, Original_TableId, Original_OrderId);
         }
     }

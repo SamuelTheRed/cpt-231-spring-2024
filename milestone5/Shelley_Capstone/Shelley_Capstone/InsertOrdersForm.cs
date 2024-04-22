@@ -36,7 +36,7 @@ namespace Shelley_Capstone
             this.Validate();
             this.ordersBindingSource.EndEdit();
             try { 
-                this.tableAdapterManager.OrdersTableAdapter.Insert(DateTime.Parse(orderDateTimeDateTimePicker.Text), (int) orderNumSelect.Value, (int) userIdNumSelect.Value, (int) tableIdNumSelect.Value);
+                this.tableAdapterManager.OrdersTableAdapter.Insert(orderDateTimeDateTimePicker.Text, (int) orderNumSelect.Value, (int) userIdNumSelect.Value, (int) tableIdNumSelect.Value);
                 this.ordersTableAdapter.Fill(this.shelleyRestaurantDataSet.Orders);
             } catch(Exception ex) {
                 MessageBox.Show((string)ex.Message, "Use Valid Data including Foreign Keys Ids");

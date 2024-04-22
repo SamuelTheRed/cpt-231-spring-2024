@@ -36,5 +36,27 @@ namespace Shelley_Capstone
             this.inventoryTableAdapter.Fill(this.shelleyRestaurantDataSet.Inventory);
 
         }
+
+        private void codeSearchButton_Click(object sender, EventArgs e)
+        {
+            this.inventoryTableAdapter.FillByCodeGreater(this.shelleyRestaurantDataSet.Inventory, searchParamTextBox.Text);
+        }
+
+        private void quantitySearchButton_Click(object sender, EventArgs e)
+        {
+            int num;
+            int.TryParse(searchParamTextBox.Text, out num);
+            this.inventoryTableAdapter.FillByQuantityGreater(this.shelleyRestaurantDataSet.Inventory, num);
+        }
+
+        private void resetSearchButton_Click(object sender, EventArgs e)
+        {
+            this.inventoryTableAdapter.Fill(this.shelleyRestaurantDataSet.Inventory);
+        }
+
+        private void closeButton_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
