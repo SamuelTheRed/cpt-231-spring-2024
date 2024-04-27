@@ -1,0 +1,106 @@
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe.config
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.AssemblyReference.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.SuggestedBindingRedirects.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Form1.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.OrderReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateInventoryForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateMenuItemsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateOrdersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.ViewMenuForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Properties.Resources.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.GenerateResource.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateUsersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Final Project\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InventoryReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant.mdf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant_log.ldf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe.config
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.AssemblyReference.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.SuggestedBindingRedirects.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Form1.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InventoryReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.OrderReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateInventoryForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateMenuItemsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateOrdersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateUsersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.ViewMenuForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Properties.Resources.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.GenerateResource.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant.mdf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant_log.ldf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe.config
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.AssemblyReference.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.SuggestedBindingRedirects.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Form1.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InventoryReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.OrderReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateInventoryForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateMenuItemsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateOrdersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.UpdateUsersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.ViewMenuForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Properties.Resources.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.GenerateResource.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Week 11\shelley_projectMilestone2\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant.mdf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant_log.ldf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe.config
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.AssemblyReference.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.SuggestedBindingRedirects.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Form1.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InventoryReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.OrderReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertInventoryForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertMenuItemsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertOrdersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertUsersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchUsersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.ViewMenuForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Properties.Resources.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.GenerateResource.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchOrdersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchInventoryForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone4\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchMenuItems.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant.mdf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\bin\Debug\ShelleyRestaurant_log.ldf
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe.config
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\bin\Debug\Shelley_Capstone.pdb
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.AssemblyReference.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.SuggestedBindingRedirects.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Form1.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InventoryReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.OrderReportsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertInventoryForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertMenuItemsForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertOrdersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.InsertUsersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchInventoryForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchMenuItems.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchOrdersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.SearchUsersForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.ViewMenuForm.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.Properties.Resources.resources
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.GenerateResource.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.exe
+C:\Users\samue\Documents\School\Spring 2024\C#(CPT231)\Info\Github\cpt-231-spring-2024\milestone5\Shelley_Capstone\Shelley_Capstone\obj\Debug\Shelley_Capstone.pdb
