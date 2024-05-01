@@ -37,6 +37,7 @@ namespace Shelley_Capstone
             try { 
                 this.tableAdapterManager.InventoryTableAdapter.Insert(inventoryCodeTextBox.Text, inventoryDescriptionTextBox.Text, (int) quantityNumSelect.Value);
                 this.inventoryTableAdapter.Fill(this.shelleyRestaurantDataSet.Inventory);
+                this.tableAdapterManager.UpdateAll(this.shelleyRestaurantDataSet);
             } catch(Exception ex) {
                 MessageBox.Show((string) ex.Message, "Use Valid Data including Foreign Keys Ids");
             }
